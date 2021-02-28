@@ -1,0 +1,403 @@
+bind_host: 0.0.0.0
+bind_port: 3000
+beta_bind_port: 0
+users:
+- name: root
+  password: $2y$10$Ff.8rXKiiv5KWqti.oRU5OSho3k8hSFYfhU6Q7gL45DfT7jccUAP.
+http_proxy: ""
+language: ""
+rlimit_nofile: 0
+debug_pprof: false
+web_session_ttl: 720
+dns:
+  bind_host: 0.0.0.0
+  port: 53
+  statistics_interval: 1
+  querylog_enabled: false
+  querylog_file_enabled: true
+  querylog_interval: 1
+  querylog_size_memory: 1000
+  anonymize_client_ip: false
+  protection_enabled: true
+  blocking_mode: default
+  blocking_ipv4: ""
+  blocking_ipv6: ""
+  blocked_response_ttl: 10
+  parental_block_host: family-block.dns.adguard.com
+  safebrowsing_block_host: standard-block.dns.adguard.com
+  ratelimit: 0
+  ratelimit_whitelist: []
+  refuse_any: false
+  upstream_dns:
+  - 127.0.0.1:7874
+  upstream_dns_file: ""
+  bootstrap_dns:
+  - 223.5.5.5:53
+  - 114.114.114.114:53
+  - 119.28.28.28:53
+  all_servers: true
+  fastest_addr: false
+  allowed_clients: []
+  disallowed_clients: []
+  blocked_hosts:
+  - version.bind
+  - id.server
+  - hostname.bind
+  cache_size: 0
+  cache_ttl_min: 0
+  cache_ttl_max: 0
+  bogus_nxdomain: []
+  aaaa_disabled: true
+  enable_dnssec: false
+  edns_client_subnet: false
+  max_goroutines: 300
+  ipset: []
+  filtering_enabled: true
+  filters_update_interval: 72
+  parental_enabled: false
+  safesearch_enabled: false
+  safebrowsing_enabled: false
+  safebrowsing_cache_size: 1048576
+  safesearch_cache_size: 1048576
+  parental_cache_size: 1048576
+  cache_time: 30
+  rewrites: []
+  blocked_services: []
+  customresolver: null
+tls:
+  enabled: false
+  server_name: ""
+  force_https: false
+  port_https: 443
+  port_dns_over_tls: 853
+  port_dns_over_quic: 784
+  port_dnscrypt: 0
+  dnscrypt_config_file: ""
+  allow_unencrypted_doh: false
+  strict_sni_check: false
+  certificate_chain: ""
+  private_key: ""
+  certificate_path: ""
+  private_key_path: ""
+filters:
+- enabled: true
+  url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+  name: AdGuard Simplified Domain Names filter
+  id: 1
+- enabled: true
+  url: https://adaway.org/hosts.txt
+  name: AdAway
+  id: 2
+- enabled: true
+  url: https://anti-ad.net/easylist.txt
+  name: 'CHN: anti-AD'
+  id: 1610473127
+- enabled: true
+  url: https://easylist-downloads.adblockplus.org/easylist.txt
+  name: EasyList
+  id: 1610473131
+- enabled: true
+  url: https://easylist-downloads.adblockplus.org/easyprivacy.txt
+  name: EasyPrivacy
+  id: 1610473132
+- enabled: true
+  url: https://gitee.com/halflife/list/raw/master/ad.txt
+  name: HalfLife
+  id: 1610473135
+- enabled: true
+  url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
+  name: xinggsfrule
+  id: 1611516690
+- enabled: true
+  url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
+  name: xinggsfmv
+  id: 1611516691
+- enabled: true
+  url: https://www.i-dont-care-about-cookies.eu/abp/
+  name: I don’t care about cookies
+  id: 1611516692
+- enabled: true
+  url: https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt
+  name: Perflyst and Dandelion Sprout's Smart-TV Blocklist
+  id: 1611516693
+- enabled: true
+  url: https://someonewhocares.org/hosts/zero/hosts
+  name: Dan Pollock's List
+  id: 1611516694
+- enabled: true
+  url: https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext
+  name: Peter Lowe's List
+  id: 1611516695
+whitelist_filters: []
+user_rules:
+- '@@||*.miui.com^$important'
+- '@@||*.xiaomi.com^$important'
+- '@@||*.baidu.com^$important'
+- '@@||*.taobao.com^$important'
+- '@@||*.qq.com^$important'
+- '@@||dns.weixin.qq.com^$important'
+- '@@||*.cdninstagram.com^$important'
+- '@@||update.miui.com^$important'
+- '@@||im.qq.com^$important'
+- '@@||*.ele.me^$important'
+- '@@||view.inews.qq.com^$important'
+- '@@||api.sec.miui.com^$important'
+- '@@||cdn.ark.qq.com^$important'
+- '@@||*.bdimg.com^$important'
+- '@@||t1.baidu.com^$important'
+- '@@||t2.baidu.com^$important'
+- '@@||t3.baidu.com^$important'
+- '@@||t4.baidu.com^$important'
+- '@@||t5.baidu.com^$important'
+- '@@||t6.baidu.com^$important'
+- '@@||t7.baidu.com^$important'
+- '@@||t8.baidu.com^$important'
+- '@@||t9.baidu.com^$important'
+- '@@||t10.baidu.com^$important'
+- '@@||t11.baidu.com^$important'
+- '@@||t12.baidu.com^$important'
+- '@@||gia.jd.com^$important'
+- '@@||wl.jd.com^$important'
+- '@@||mos.m.taobao.com^$important'
+- '@@||cmshow.qq.com^$important'
+- '@@||*.api.adidas.com.cn^$important'
+- '@@||at.umeng.com^$important'
+- '@@||api.video.xiaomi.com^$important'
+- '@@||*.mi-img.com^$important'
+- '@@||soft.tbs.imtt.qq.com^$important'
+- '@@||pingjs.qq.com^$important'
+- '@@||pingtcss.qq.com^$important'
+- '@@||cl2.webterren.com^$important'
+- '@@||*.imtt.qq.com^$important'
+- '@@||wbapp.mobile.sina.cn^$important'
+- '@@||free.sinaimg.cn^$important'
+- '@@||appmsg.gzmtr.cn^$important'
+- '@@||dldir1.qq.com^$important'
+- '@@||weixin.qq.com^$important'
+- '@@||*.img.mobile.sina.cn^$important'
+- '@@||*.126.net^$important'
+- '@@||quan.suning.com^$important'
+- '@@||mparticle.uc.cn^$important'
+- '@@||g.shumafen.cn^$important'
+- '@@||dd.myapp.com^$important'
+- '@@||s.click.taobao.com^$important'
+- '@@||zkres.myzaker.com^$important'
+- '@@||*.video.xiaomi.com^$important'
+- '@@||inews.gtimg.com^$important'
+- '@@||duapps.com^$important'
+- '@@||*.snssdk.com^$important'
+- '@@||mobile.appchina.com^$important'
+- '@@||connect.rom.miui.com^$important'
+- '@@||get.sogou.com^$important'
+- '@@||twimg.com^$important'
+- '@@||mam.netease.com^$important'
+- '@@||pp.myapp.com^$important'
+- '@@||duiba.com.cn^$important'
+- '@@||t.me^$important'
+- '@@||btrace.qq.com^$important'
+- '@@||graph.qq.com^$important'
+- '@@||api.account.xiaomi.com^$important'
+- '@@||metok.sys.miui.com^$important'
+- '@@||mibi.api.xiaomi.com^$important'
+- '@@||t.cn^$important'
+- '@@||work.weixin.qq.com^$important'
+- '@@||*.aliyun.com^$important'
+- '@@||toutiaocdn.com^$important'
+- '@@||*.qlogo.cn^$important'
+- '@@||*.sm.cn^$important'
+- '@@||sina.cn^$important'
+- '@@||broccoli.uc.cn^$important'
+- '@@||t.co^$important'
+- '@@||youtu.be^$important'
+- '@@||vdun.weibo.com^$important'
+- '@@||pingfore.qq.com^$important'
+- '@@||stat.y.qq.com^$important'
+- '@@||api.comm.miui.com^$important'
+- '@@||yun.rili.cn^$important'
+- '@@||lhl.zxcs.linghit.com^$important'
+- '@@||iflow.uc.cn^$important'
+- '@@||ctrip.com^$important'
+- '@@||wx2.sinaimg.cn^$important'
+- '@@||c.y.qq.com^$important'
+- '@@||api.rikka.app^$important'
+- '@@||oppo.yidianzixun.com^$important'
+- '@@||ib11.go2yd.com^$important'
+- '@@||lpl.qq.com^$important'
+- '@@||logs.game.qq.com^$important'
+- '@@||*.lol.qq.com^$important'
+- '@@||ip.cn^$important'
+- '@@||suo.im^$important'
+- '@@||bigota.d.miui.com^$important'
+- '@@||api.jr.mi.com^$important'
+- '@@||kyaru-concat.now.sh^$important'
+- '@@||api.zhihu.com^$important'
+- '@@||appcloud.zhihu.com^$important'
+- '@@||weidian.com^$important'
+- '@@||h5.m.taobao.com^$important'
+- '@@||api.io.mi.com^$important'
+- '@@||tvepg.pandora.xiaomi.com^$important'
+- '@@||*.bmap6.cn^$important'
+- '@@||mobile.controller.duokanbox.com^$important'
+- '@@||api.ts.feedback.qy.net^$important'
+- '@@||feedback.miui.com^$important'
+- '@@||akamaized.net^$important'
+- '@@||duckduckgo.com^$important'
+- '@@||*.recaptcha.net^$important'
+- '@@||bonuscloud.io^$important'
+- '@@||computemaster.bxcearth.com^$important'
+- '@@||simg.sinajs.cn^$important'
+- '@@||pinghot.qq.com^$important'
+- '@@||*.y.qq.com^$important'
+- '@@||yun.duiba.com.cn^$important'
+- '@@||*.gtimg.cn^$important'
+- '@@||input.shouji.sogou.com^$important'
+- '@@||ip.taobao.com^$important'
+- '@@||cn.ultraiso.net^$important'
+- '@@||sqimg.qq.com^$important'
+- '@@||imtt.dd.qq.com^$important'
+- '@@||image.uc.cn^$important'
+- '@@||m.video.9ddm.com^$important'
+- '@@||o2o.api.xiaomi.com^$important'
+- '@@||*.xiaomi.net^$important'
+- '@@||c.pc.qq.com^$important'
+- '@@||*.jiaoyimao.com^$important'
+- '@@||res.imtt.qq.com^$important'
+- '@@||recmd.html5.qq.com^$important'
+- '@@||debugtbs.qq.com^$important'
+- '@@||3gimg.qq.com^$important'
+- '@@||*.m.qq.com^$important'
+- '@@||*.map.qq.com^$important'
+- '@@||dnet.mb.qq.com^$important'
+- '@@||web.vip.miui.com^$important'
+- '@@||app.zhuanzhuan.com^$important'
+- '@@||client.wns.windows.com^$important'
+- '@@||gcable.com.cn^$important'
+- '@@||uee.me^$important'
+- '@@||baike.so.com^$important'
+- '@@||tracker.ai.xiaomi.com^$important'
+- '@@||img.zuoyebang.cc^$important'
+- '@@||p2p.huya.com^$important'
+- '@@||translator.qq.com^$important'
+- '@@||*.alipay.com^$important'
+- '@@||mail.qq.com^$important'
+- '@@||mjrpay.jd.com^$important'
+- '@@||cfm.jd.com^$important'
+- '@@||jr.jd.com^$important'
+- '@@||qun.qzone.qq.com^$important'
+- '@@||ohssr.cn^$important'
+- '@@||*.alicdn.com^$important'
+- '@@||*.ykimg.com^$important'
+- '@@||*.market.xiaomi.com^$important'
+- '@@||dmm.co.jp^$important'
+- '@@||upgrade.ptmi.gitv.tv^$important'
+- '@@||images.uc.cn^$important'
+- '@@||restapi.amap.com^$important'
+- '@@||plbslog.umeng.com^$important'
+- '@@||*.gdt.qq.com^$important'
+- '@@||*.duoku.com^$important'
+- '@@||*.netease.com^$important'
+- '@@||*.mkey.163.com^$important'
+- '@@||*.mipay.com^$important'
+- '@@||*.miwifi.com^$important'
+- '@@||*.data.microsoft.com^$important'
+- '@@||*.qualtrics.com^$important'
+- '@@||*.southcn.com^$important'
+- '@@||youtubei.googleapis.com^$important'
+- '||pizzaseo.com'
+- '@@||account.xiaomi.com^$important'
+- '||relay.phub.hz.sandai.net^$important'
+- '@@||data.mistat.intl.xiaomi.com^$important'
+- '||*.kyunheet.cn^$important'
+- '||*.yl89.cn^$important'
+- '@@||tsmclient.miui.com^$important'
+- '@@||*.app.qq.com^$important'
+- '@@||*.tencent-cloud.net^$important'
+- '||adash.man.aliyuncs.com^$important'
+- '||iadmusicmat.music.126.net^$important'
+- '@@||cnbj1.fds.api.xiaomi.com^$important'
+- '@@||*.qzone.qq.com^$important'
+- '@@||sourl.cn^$important'
+- '@@||alissl.ucdl.pp.uc.cn^$important'
+- '@@||ynuf.aliapp.org^$important'
+- '@@||tv.sohu.com^$important'
+- '@@||m.youtube.com^$important'
+- '||*.6699997.com^$important'
+- '||htcp.ppbk4.com^$important'
+- '@@||*.aliyuncs.com^$important'
+- '@@||*.alibabausercontent.com^$important'
+- '@@||s.click.ele.me^$important'
+- '||adclick.g.doubleclick.net^$important'
+- '||*.rtkgyo.com^$important'
+- '@@||*.mybank.cn^$important'
+- '@@||*.in-addr.arpa^$important'
+- '@@||www.qq.com^$important'
+- '||scdn.abawa.top^$important'
+- '@@||cn.bing.com^$important'
+- '@@||360.cn^$important'
+- '@@||cm.bilibili.com^$important'
+- '@@||dataflow.biliapi.com^$important'
+- '@@||dig.bdurl.net^$important'
+- '@@||ksixwl.vip^$important'
+- '@@||*.bilibili.com^$important'
+- '@@||*.hdslb.com/^$important'
+- '||*.googlesyndication.com^$important '
+- '#去除Pixiv lllustration Collection 网页端图片锁'
+- m.pixivic.com##.setu-filter
+- 'm.pixivic.com#$#div>img[style*="opacity: 0;"] {opacity: 1 !important;}'
+- 'm.pixivic.com#$#div>img[style*="filter: blur(20px);"] {filter:initial !important;}'
+- 'm.pixivic.com#$#div>img[style*="filter: blur(25px);"] {filter:initial !important;}'
+- '#油管谷歌广告'
+- /googleads.$~script,domain=~googleads.github.io
+- /pagead/lvz?
+- '||google.com/pagead/'
+- '||static.doubleclick.net^$domain=youtube.com'
+- '||youtube.com/get_midroll_'
+- '||api.ad.xiaomi.com^$important'
+- '@@||github.com^$important'
+- '@@||ulogs.umengcloud.com^$important'
+- '@@||toblog.ctobsnssdk.com^$important'
+- '@@||ulogs.umeng.com^$important'
+- '@@||githubusercontent.com^$important'
+- '@@||*.google.com^$important'
+- '@@||*.pixivic.com^$important'
+- '#百度知道相关广告'
+- '||fzpf.whntsw.cn^$important'
+- '||wh.huitop.cn^$important'
+- '||baoma328l.com^$important'
+- '||fzpf.xzqzwl.top^$important'
+- '@@||*.pornhub.com^$important'
+- '@@||ci.phncdn.com^$important'
+- '@@||t.appsflyer.com^$important'
+- '@@||di.phncdn.com^$important'
+- '||ad.browser.qq.com^$important'
+- '@@||stats.jpush.cn^$important'
+- '@@||91porn.com^$important'
+- '@@||*.pornhub.com^$important'
+- '@@||cdn1.theporndude.com^$important'
+- '@@||*.hdslb.com^$important'
+- '@@||*.biliapi.net^$important'
+dhcp:
+  enabled: false
+  interface_name: ""
+  dhcpv4:
+    gateway_ip: ""
+    subnet_mask: ""
+    range_start: ""
+    range_end: ""
+    lease_duration: 86400
+    icmp_timeout_msec: 1000
+    options: []
+  dhcpv6:
+    range_start: ""
+    lease_duration: 86400
+    ra_slaac_only: false
+    ra_allow_slaac: false
+clients: []
+log_compress: false
+log_localtime: false
+log_max_backups: 0
+log_max_size: 100
+log_max_age: 3
+log_file: ""
+verbose: false
+schema_version: 7
