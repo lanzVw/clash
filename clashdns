@@ -103,7 +103,7 @@ dns:
   - "*.linksyssmartwifi.com"
   - "+.battlenet.com.cn"
   fallback-filter:
-    geoip: false
+    geoip: true
     ipcidr:
     - 0.0.0.0/8
     - 10.0.0.0/8
