@@ -62,6 +62,42 @@ dns:
   - time2.google.com
   - time3.google.com
   - time4.google.com
+    - "+.battlenet.com.cn"
+  - "*.linksyssmartwifi.com"
+  - "*.linksys.com"
+  - heartbeat.belkin.com
+  - stun.*.*.*
+  - stun.*.*
+  - proxy.golang.org
+  - "+.xboxlive.com"
+  - xbox.*.microsoft.com
+  - "+.stun.playstation.net"
+  - "+.srv.nintendo.net"
+  - localhost.ptlogin2.qq.com
+  - "*.msftncsi.com"
+  - "*.msftconnecttest.com"
+  - music.migu.cn
+  - "*.music.migu.cn"
+  - "*.xiami.com"
+  - amobile.music.tc.qq.com
+  - aqqmusic.tc.qq.com
+  - dl.stream.qqmusic.qq.com
+  - isure.stream.qqmusic.qq.com
+  - mobileoc.music.tc.qq.com
+  - streamoc.music.tc.qq.com
+  - "*.y.qq.com"
+  - y.qq.com
+  - joox.com
+  - api.joox.com
+  - api-jooxtt.sanook.com
+  - "*.kuwo.cn"
+  - trackercdn.kugou.com
+  - songsearch.kugou.com
+  - music.taihe.com
+  - musicapi.taihe.com
+  - "*.126.net"
+  - "*.music.163.com"
+  - music.163.com
   fallback-filter:
     geoip: true
     ipcidr:
