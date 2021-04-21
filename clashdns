@@ -8,16 +8,15 @@ dns:
   nameserver:
   - 119.29.29.29
   - 223.5.5.5
-  - 114.114.114.114
-  - https://dns.adguard.com/dns-query
   - https://dns.alidns.com/dns-query
+  - https://dns.adguard.com/dns-query
   fallback:
   - 8.8.8.8
   - 1.1.1.1
-  - tls://dns.rubyfish.cn:853
   - tls://dns.google:853
-  - https://dns.rubyfish.cn/dns-query
+  - tls://dns.rubyfish.cn:853
   - https://dns.google/dns-query
+  - https://dns.rubyfish.cn/dns-query
   enable: true
   ipv6: false
   enhanced-mode: fake-ip
