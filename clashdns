@@ -9,6 +9,8 @@ dns:
   - 119.29.29.29
   - 223.5.5.5
   fallback:
+  - 8.8.8.8
+  - 1.1.1.1
   - tls://one.one.one.one:853
   - tls://dns.google:853
   enable: true
