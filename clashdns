@@ -5,16 +5,14 @@ mode: rule
 log-level: silent
 external-controller: 0.0.0.0:9090
 dns:
-  default-nameserver:
+  nameserver:
   - 119.29.29.29
   - 223.5.5.5
-  nameserver:
   - https://doh.pub/dns-query
   - https://dns.alidns.com/dns-query
   fallback:
   - tls://one.one.one.one:853
   - tls://dns.google:853
-  - https://dns.twnic.tw/dns-query
   - https://dns.adguard.com/dns-query
   - https://doh.dns.sb/dns-query
   enable: true
