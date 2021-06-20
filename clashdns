@@ -5,16 +5,18 @@ mode: rule
 log-level: silent
 external-controller: 0.0.0.0:9090
 dns:
-  nameserver:
+  default-nameserver:
   - 119.29.29.29
   - 223.5.5.5
+  nameserver:
   - https://doh.pub/dns-query
   - https://dns.alidns.com/dns-query
   fallback:
+  - 8.8.8.8
   - tls://one.one.one.one:853
   - tls://dns.google:853
   - https://dns.adguard.com/dns-query
-  - https://doh.dns.sb/dns-query
+  - https://dns.adguard.com/dns-query
   enable: true
   ipv6: false
   enhanced-mode: fake-ip
