@@ -1,0 +1,39 @@
+# 内容：Emby Proxy
+# 比较全面的各家 Emby 地址
+# 屏蔽大陆IP，请使用:香港,新加坡,日本等线路登录观看
+
+# > 流媒体emby关键词抽取
+DOMAIN-KEYWORD,emby
+DOMAIN-KEYWORD,emby.wtf
+DOMAIN-KEYWORD,jmsooo.com
+DOMAIN-KEYWORD,xeton.dev
+DOMAIN-KEYWORD,odysseyplus
+DOMAIN-KEYWORD,pornemby
+DOMAIN-KEYWORD,plusmedia
+
+# > 流媒体emby-nexitally服务器
+DOMAIN-SUFFIX,emby.nexitally.com
+
+# > 流媒体emby-paoche服务器
+DOMAIN-SUFFIX,emby.cjpc.xyz
+DOMAIN-SUFFIX,emby.paoche.ooo
+
+# > 流媒体emby-flowercloud服务器
+DOMAIN-SUFFIX,emby.flowercloud.yt
+
+# > 流媒体emby-maying服务器
+DOMAIN-SUFFIX,emby.maying.club
+
+# > 流媒体emby-mdss服务器
+DOMAIN-SUFFIX,emby.mdss.cloud
+
+# > 流媒体emby-ytoo服务器
+DOMAIN-SUFFIX,emby.ytoo.li
+
+# > 流媒体emby-w8ves服务器
+DOMAIN-SUFFIX,embyserver.ga
+
+# > 流媒体emby-prpr服务器
+DOMAIN-SUFFIX,emby.prprcloud.com
+DOMAIN-SUFFIX,emby.plusmedia.site
+DOMAIN-SUFFIX,line.emby.men
