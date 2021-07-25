@@ -6,8 +6,8 @@ log-level: silent
 external-controller: 0.0.0.0:9090
 dns:
   nameserver:
-  - 119.29.29.29
   - 223.5.5.5
+  - 114.114.114.114
   - tls://dns.rubyfish.cn:853
   fallback:
   - 8.8.8.8
