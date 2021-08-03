@@ -10,7 +10,7 @@ dns:
   - 223.5.5.5
   - tls://dns.rubyfish.cn:853
   fallback:
-  - 8.8.8.8
+  - 8.8.4.4
   - tls://dns.rubyfish.cn:853
   enable: true
   ipv6: false
