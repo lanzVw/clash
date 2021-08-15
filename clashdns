@@ -5,13 +5,16 @@ mode: rule
 log-level: silent
 external-controller: 0.0.0.0:9090
 dns:
+  default-nameserver:
+  - 119.29.29.29
+  - 8.8.8.8
   nameserver:
   - 119.29.29.29
-  - 223.5.5.5
   - tls://dns.rubyfish.cn:853
+  - https://1.1.1.1/dns-query
   fallback:
-  - 8.8.4.4
-  - tls://dns.rubyfish.cn:853
+  - 8.8.8.8
+  - tcp://1.1.1.1
   enable: true
   ipv6: false
   enhanced-mode: fake-ip
