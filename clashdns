@@ -5,9 +5,6 @@ mode: rule
 log-level: silent
 external-controller: 0.0.0.0:9090
 dns:
-  default-nameserver:
-  - 119.29.29.29
-  - 8.8.8.8
   nameserver:
   - 119.29.29.29
   - tls://dns.rubyfish.cn:853
