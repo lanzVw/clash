@@ -8,10 +8,11 @@ dns:
   nameserver:
   - 119.29.29.29
   - tls://dns.rubyfish.cn:853
-  - https://1.1.1.1/dns-query
+  - https://dns.pub/dns-query
   fallback:
   - 8.8.8.8
-  - tcp://1.1.1.1
+  - tls://dns.google
+  - https://dns.google/dns-query
   enable: true
   ipv6: false
   enhanced-mode: fake-ip
